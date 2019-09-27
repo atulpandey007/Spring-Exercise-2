@@ -4,7 +4,7 @@
 </head>
 <body>
 
-<form action="form">
+<form action="login" method="post">
 
 UserName: <br> <input type="text" placeholder="Username" name="first"> </br>
 Password: <br> <input type="password"  placeholder="Password" name="UserPassword"></br>

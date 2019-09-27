@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
-@ComponentScan({"com.stackroute.second"})
+@ComponentScan({"com.stackroute.controller"})
 public class Myconfig {
     @Bean
     public InternalResourceViewResolver method() {

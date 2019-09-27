@@ -20,15 +20,14 @@ public class LoginController
     @RequestMapping("login")
     public ModelAndView login(HttpServletRequest req, HttpServletResponse res)
 
-
     {
         String username = req.getParameter("first");
-        String password = req.getParameter("second");
+        String password = req.getParameter("UserPassword");
 
         User user = new User(username, password);
         ModelAndView mv = new ModelAndView();
-        mv.setViewName("Login");
-        mv.addObject("disname", username);
+        mv.addObject("user", user);
+        mv.setViewName("display");
         return mv;
     }
 
